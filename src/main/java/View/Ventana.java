@@ -2,7 +2,7 @@ package View;
 import javax.swing.ImageIcon;
 
 /**
- * @author PC
+ * @author Miguel G.G.G.
  */
 
 public class Ventana extends javax.swing.JFrame{
@@ -54,24 +54,30 @@ public class Ventana extends javax.swing.JFrame{
         for(int i = 0; i<=9; i++){
             //Se crean los botones numericos y le asignamos su numero correspondiente
             numericButtons[i] = new javax.swing.JButton(Character.toString(num.charAt(i)));
+            numericButtons[i].setFocusable(false);
             numericButtons[i].setFont(new java.awt.Font("arial", java.awt.Font.PLAIN, 18));
         }
         
         
         punto = new javax.swing.JButton(".");
+        punto.setFocusable(false);
         punto.setFont(new java.awt.Font("arial", java.awt.Font.PLAIN, 40));
         borrar = new javax.swing.JButton("DEL");
+        borrar.setFocusable(false);
         borrar.setFont(new java.awt.Font("arial", java.awt.Font.PLAIN, 18));
         borrar.setBackground(new java.awt.Color(148,128,247));
         limpiar = new javax.swing.JButton("AC");
+        limpiar.setFocusable(false);
         limpiar.setBackground(new java.awt.Color(148,128,247));
         limpiar.setFont(new java.awt.Font("arial", java.awt.Font.PLAIN, 18));
         resultado = new javax.swing.JButton("=");
+        resultado.setFocusable(false);
         resultado.setFont(new java.awt.Font("arial", java.awt.Font.PLAIN, 18));
         
         String oper = "+-*/";
         for(int i = 0; i<=3; i++){
             operationButtons[i] = new javax.swing.JButton(Character.toString(oper.charAt(i)));
+            operationButtons[i].setFocusable(false);
             operationButtons[i].setFont(new java.awt.Font("arial", java.awt.Font.PLAIN, 25));
         }
         

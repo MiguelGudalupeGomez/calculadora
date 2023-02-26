@@ -1,6 +1,6 @@
 package Model;
 /**
- * @author Miguel G. Gómez Guzmán
+ * @author Miguel G.G.G.
  */
 public class Operations {
     //Obtener tamaño del arreglo

@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.text.DecimalFormat;
 
 /**
- * @author Miguel G. Gómez Guzmán
+ * @author Miguel G.G.G.
  */
 public class MouseEvent{
     private final Ventana interfaz;
@@ -19,12 +19,11 @@ public class MouseEvent{
         outFormat = new DecimalFormat("#");
         this.interfaz = interfaz;
         this.util = new Utilities();
-        clickOn();
         operation = new Operations();
     }
     
     //funcion que contiene todos los eventos al hacer click en los botones de la calculadora
-    private void clickOn(){
+    public void clickOn(){
         //botones numericos
         this.interfaz.numericButtons[0].addActionListener((ActionEvent e) ->{
             this.interfaz.pantalla.setText(this.interfaz.pantalla.getText()+"0");

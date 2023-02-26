@@ -1,7 +1,7 @@
 package Model;
 
 /**
- * @author Miguel G. Gómez Guzmán
+ * @author Miguel G.G.G.
  */
 public class Utilities {
     
@@ -104,12 +104,16 @@ public class Utilities {
         return retorno;
     }
     
-    public boolean charAllowed(char c){
+    public boolean charsAllowed(char c){
         boolean retorno = true;
-        String cadena = "0123456789+-*/.";
+        String cadena = "0123456789";
         for(var i : cadena.toCharArray()){
-            if(c != i) retorno = false;
+            retorno = charAllowed(c, i);
+            if(retorno) break;
         }
         return retorno;
+    }
+    private boolean charAllowed(char c, char d){
+        return c == d;
     }
 }
